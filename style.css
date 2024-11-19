@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, rgb(152, 25, 156) 0%, #a01e1e 100%);
+    color: #fff;
+}
+
+.weather-app {
+    text-align: center;
+    background: #0c0c091a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.weather-app h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #fff;
+}
+
+#city-input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+#search-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#search-button:hover {
+    background-color: #0056b3;
+}
+
+.weather-info {
+    margin-top: 20px;
+}
+
+.weather-info h2 {
+    font-size: 1.5rem;
+}
+
+.weather-info .temp {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+/* Feedback Form Styling */
+.feedback-form {
+    margin-top: 30px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.feedback-form h2 {
+    text-align: center;
+    color: #fff;
+}
+
+.feedback-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: #218838;
+}
