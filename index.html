@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Weather App with Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="weather-app">
+        <h1>Weather App</h1>
+        <input type="text" id="city-input" placeholder="Enter city name...">
+        <button id="search-button">Search</button>
+
+        <div class="weather-info" id="weather-info" style="display: none;">
+            <h2 id="city-name"></h2>
+            <p class="temp"><span id="temperature"></span>°C</p>
+            <p id="description"></p>
+            <p><strong>Humidity:</strong> <span id="humidity"></span>%</p>
+            <p><strong>Wind Speed:</strong> <span id="wind-speed"></span> m/s</p>
+        </div>
+
+        <!-- Feedback Form Section -->
+        <div class="feedback-form">
+            <h2>Feedback</h2>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="853da293-f42f-46bb-b9d5-34a68c7e0d5d">
+                <label for="name">Name:</label>
+                <p><input type="text" id="name" name="name" required><br></p>
+        
+                <label for="email">Email:</label>
+                <p><input type="email" id="email" name="email" required><br></p>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea><br>
+        
+                <button type="submit" value="Send"><h2><b>Submit</b></h2></button>
+            </form>
+            
+        </div>
+    </section>
+    <div class="last-text">
+        <p>Developed By Mihir Mahendra Mhatre....</p>
+    </div>
+    <a href="#" class="top"><i class='bx bx-up-arrow-alt'></i></a>
+            <p id="feedback-success" style="display: none; color: green;">Thank you for your feedback!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
